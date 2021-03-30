@@ -53,8 +53,8 @@ public class MailSpamer {
                              protected PasswordAuthentication getPasswordAuthentication() {
                                 return new PasswordAuthentication(username, password);
                              }});
-	int Anzahlminuseins= anzahl -1;						 
-		for (int i= 0; i < Anzahlminuseins; i++){
+						 
+		for (int i= 1; i < anzahl; i++){
    // -- Create a new message --
       Message msg = new MimeMessage(session);
 
@@ -70,7 +70,7 @@ public class MailSpamer {
 	  System.out.println(i);
 		}
     }catch (MessagingException e){ 
-      System.out.println("Erreur d'envoi, cause: " + e);
+      System.out.println("Oh mon Dieu, erreur d'envoi, cause: " + e);
     }
   }
 }
