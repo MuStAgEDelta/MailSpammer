@@ -61,7 +61,7 @@ public class MailSpamer {
    // -- Set the FROM and TO fields --
       msg.setFrom(new InternetAddress(username));
       msg.setRecipients(Message.RecipientType.TO, 
-                        InternetAddress.parse(/*zuSpammendeMail*/"ra.fe@live.de",false));
+                        InternetAddress.parse(/*zuSpammendeMail*/"/*TO_DO hier zu spammende Mail einfügen*/",false));
       msg.setSubject("Salue");
       msg.setText("est Mail ");
       msg.setSentDate(new Date());
